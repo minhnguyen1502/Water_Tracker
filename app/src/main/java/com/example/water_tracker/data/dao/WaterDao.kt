@@ -18,7 +18,7 @@ interface WaterDao {
 
     @Query("SELECT * FROM water_table")
     fun getAll(): LiveData<List<Water>>
-
 }
+
 
 
