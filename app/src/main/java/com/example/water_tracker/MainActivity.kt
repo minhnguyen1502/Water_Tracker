@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         waterViewModel.waterList.observe(this, Observer { waterList ->
             adapter.updateData(waterList)
-            // Tính tổng số lượng nước
             val totalWater = waterList.sumOf { it.amount }
             totalWaterTextView.text = "Total Water: $totalWater ml"
         })
